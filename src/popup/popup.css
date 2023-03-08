@@ -1,0 +1,189 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* custom */
+.app {
+  min-height: 100%;
+  width: 250px;
+  padding: 2rem;
+  background-color: #343434;
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* upper section - port providers */
+
+.upper {
+  /* border: 1px solid gold; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 1px solid hotpink; */
+}
+
+.portComp {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding-inline: 0.6rem;
+  padding-block: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: opacity 250ms ease;
+  user-select: none;
+}
+
+.portComp:hover {
+  opacity: 0.7;
+}
+
+.portComp:active {
+  transform: translate(1px, 1px);
+}
+
+.portComp:hover > .portCompInner > .portOptions {
+  opacity: 1;
+  color: #010;
+}
+
+.portCompInner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.portOptions {
+  flex: auto;
+  opacity: 0.3;
+  transition: all 200ms ease;
+  color: #343434;
+}
+
+.openInNewTab {
+  font-size: 1.4rem;
+}
+
+.portProvider {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 8ch;
+  color: #343434;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.portNumber {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #343434;
+}
+
+/* lower section - title and options link */
+.lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f2f2f2;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.configLink {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding-inline: 0.6rem;
+  padding-block: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: filter 300ms ease;
+  user-select: none;
+  background-color: #454545;
+  gap: 0.6rem;
+}
+
+.configLink:hover {
+  filter: brightness(140%);
+}
+
+.configLink:active {
+  transform: translate(1px, 1px);
+}
+
+.configLinkText {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}

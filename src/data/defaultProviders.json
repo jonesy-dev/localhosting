@@ -1,0 +1,14 @@
+{
+  "providerGroup": [
+    { "dataID": "dp0", "provider": "Next", "port": 3000 },
+    { "dataID": "dp1", "provider": "Vite", "port": 5173 },
+    { "dataID": "dp2", "provider": "Angular", "port": 4200 },
+    { "dataID": "dp3", "provider": "Vue", "port": 8080 },
+    { "dataID": "dp4", "provider": "Gatsby", "port": 8000 },
+    { "dataID": "dp5", "provider": "Svelte", "port": 5000 },
+    { "dataID": "dp6", "provider": "Sveltekit", "port": 5173 },
+    { "dataID": "dp7", "provider": "Express", "port": 3000 },
+    { "dataID": "dp8", "provider": "Node", "port": 8080 },
+    { "dataID": "dp9", "provider": "Nodefldhdashfldsafl", "port": 3001 }
+  ]
+}
